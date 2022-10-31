@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/adb9a279aa.js" crossorigin="anonymous"></script>
+    <script defer src="js/index.js"></script>
+    <link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
+    <title>Pets hall - salón de mascotas</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="index.html" class="enlace"><img class="logo" src="/img/logo.png" alt="logo"></a>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="listaInicio">
+                <li class="itemInicio"><a href="index.html" class="itemLink">Inicio</a></li>
+                <li class="itemInicio"><a href="productos.html" class="itemLink">Productos</a></li>
+                <li class="itemInicio"><a href="servicios.html" class="itemLink">Servicios</a></li>
+                <li class="itemInicio"><a href="nosotros.html" class="itemLink">Nosotros</a></li>
+                <li class="itemInicio"><a href="contacto.html" class="itemLink">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="clear"></div>
+    <main>
+        <div class="contenedorPrincipalFormulario">
+            <section class="formularioContacto">
+                <div class="grid">
+                    <div class="tituloFormulario">
+                        <h2 class="h2-titulo">Formulario de contacto</h2>
+                    </div>
+                </div>
+            </section>
+
+            <section class="seccionFormulario">
+                <div class="boxFormulario">
+                    <form action="mailto:guille.sistemas2022@hotmail.com" method="post" class="formulario"
+                        id="formulario">
+                        <div>
+                            <h3 class="h3-formulario">Por favor, dejar sus datos:</h3>
+                        </div>
+
+                        <!-- GRUPO NOMBRE -->
+                        <div class="formulario-grupo" id="grupo-nombre">
+                            <label for="nombre" class="formulario-label">Nombre</label>
+                            <div class="formulario-grupo-input">
+                                <input type="text" class="formulario-input" name="nombre" id="nombre"
+                                    placeholder="Nombre">
+                                <i class="formulario-validacion-estado fa-solid fa-circle-xmark"></i>
+                                <p class="formulario-input-error">No es un nombre válido. Solo puede contener letras y
+                                    espacios.</p>
+                            </div>
+                        </div>
+
+                        <!-- GRUPO CORREO -->
+                        <div class="formulario-grupo" id="grupo-correo">
+                            <label for="correo" class="formulario-label">Correo electrónico</label>
+                            <div class="formulario-grupo-input">
+                                <input type="email" class="formulario-input" name="correo" id="correo"
+                                    placeholder=" correo@correo.com">
+                                <i class="formulario-validacion-estado fa-solid fa-circle-xmark"></i>
+                                <p class="formulario-input-error">No es un correo electrónico válido.</p>
+                            </div>
+                        </div>
+
+                        <!-- GRUPO TELÉFONO -->
+                        <div class="formulario-grupo" id="grupo-telefono">
+                            <label for="telefono" class="formulario-label">Teléfono</label>
+                            <div class="formulario-grupo-input">
+                                <input type="number" class="formulario-input" name="telefono" id="telefono"
+                                    placeholder=" 1123456789">
+                                <i class="formulario-validacion-estado fa-solid fa-circle-xmark"></i>
+                                <p class="formulario-input-error">No es un teléfono válido. Solo puede contener números
+                                    sin
+                                    espacios ni guiones.</p>
+                            </div>
+                        </div>
+
+                        <!--MENSAJE-->
+                        <div class="formulario-mensaje" id="formulario-mensaje">
+                            <p><i class="fa-solid fa-triangle-exclamation"></i><b> Error:</b> Por favor completar el
+                                formulario correctamente.</p>
+                        </div>
+
+                        <div class="formulario-grupo-boton-enviar">
+                            <button type="submit" class="formulario-boton">Enviar</button>
+                            <p class="formulario-mensaje-ok" id="formulario-mensaje-ok">El formulario fue enviado
+                                exitosamente.</p>
+                        </div>
+                    </form>
+                    <div id="datosPetsHall">
+                        <h2>Como llegar a Pets Hall</h2>
+                    </div>
+
+                    <div id="map"></div>
+                    <script src="js/script.js"></script>
+                    <script
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+
+                </div>
+
+            </section>
+        </div>
+
+    </main>
+    <!-- <div class="clear"></div>-->
+
+
+    <footer class="footer">
+
+        <div class="grupo1">
+            <div class="box">
+                <figure>
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Navegación</h2>
+                <ul class="listaFooter">
+                    <li class="itemFooter"><a href="index.html" class="itemLinkFooter">Inicio</a></li>
+                    <li class="itemFooter"><a href="productos.html" class="itemLinkFooter">Productos</a></li>
+                    <li class="itemFooter"><a href="servicios.html" class="itemLinkFooter">Servicios</a></li>
+                    <li class="itemFooter"><a href="nosotros.html" class="itemLinkFooter">Nosotros</a></li>
+                    <li class="itemFooter"><a href="contacto.html" class="itemLinkFooter">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>Horarios de atención</h2>
+                <p>De LUNES a SÁBADO</p>
+                <p>Abierto de 9 a 12.30 hs y 16 a 20 hs </p>
+                <p>Feriados de 9 a 12.30 hs</p>
+            </div>
+
+            <div class="box">
+                <h2>Contacto</h2>
+                <p>Campichuelo 417, Flores, CABA</p>
+                <p>WhatsApp:</p><a class="aLinkFooter" href="https://wa.me/541167081332">+54-11-6708-1332</a></p>
+                <p>Mail:</p> <a class="aLinkFooter" href=»mailto:contacto@petshall.com»>contacto@petshall.com</a>
+                <p>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="grupo2">
+            <small class="copyright"> Pets Hall &copy;2022 - Todos los derechos reservados.</small>
+        </div>
+    </footer>
+</body>
+
+</html>

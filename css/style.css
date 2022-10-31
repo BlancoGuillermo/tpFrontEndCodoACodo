@@ -1,0 +1,910 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+
+*{
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 1rem;
+	font-family: sans-serif;
+	padding: 0 0.5rem;
+	
+}
+
+
+.contenedor{
+	padding-top: 100px;
+}
+
+/***************** esta es la cabezera de la  pagina *****************/
+header{
+	box-sizing: content-box;
+	background-color:#ffffff;
+	border-bottom: #0d2033 solid 1px;
+	object-fit: cover;
+	height: 80px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+.nav{
+	
+	display: flex;
+	justify-content: space-between;
+	max-width: 992px;
+	margin: 0 auto;
+	font-family: 'Fuzzy Bubbles', cursive;
+	
+
+}
+/*
+.enlace{
+	position: absolute;
+	padding: 20px 50px;
+}*/
+
+.logo{
+
+	display: inline-flex;
+	object-fit: cover;
+	
+}
+
+.listaInicio {
+	/*background-color: #666666;*/
+	display: flex;
+	flex-direction: row;
+	margin-right: 40px;
+	list-style: none;
+
+}
+
+.itemInicio{
+	color: black;
+	/*border: blueviolet solid 1px;*/
+	font-size: 1rem;
+	margin: 0 10px;
+	line-height: 80px;
+	text-transform: uppercase;
+	width: max-content;
+
+}
+
+.tituloInicio{
+
+	text-align: center;
+	font-size:xx-large;
+	color: red;
+	text-shadow: #000000 2px ;
+
+}
+
+.itemLink{
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: black;
+	padding: 10px;
+	width: 150px;
+	border-radius: 3px;
+}
+
+.itemLink:hover{
+	background-color: rgb(160, 160, 160);
+	transition: 0.5s;
+}
+
+.nav-toggle{
+	color:black;
+	background: none;
+	border: none;
+	font-size: 2rem;
+	padding: 0 20px;
+	line-height: 60px;
+	cursor: pointer; /*cambia imagen del cursor*/
+
+	display: none;
+
+}
+
+/***********************************************************************/
+
+.clear{
+
+	clear: both;
+}
+
+/******************************     main     ***************************/
+
+.primera-parte{
+	
+	background-color: #0d2033;
+	color: #efefef;
+	padding-top: 60px;
+	text-align: center;
+	
+
+}
+
+.primera-parte h2, h3{
+	color: #fff;
+	text-align: center;
+}
+
+.primera-parte p{
+	color: #efefef;
+}
+
+.container{
+	border-top: #0d2033 solid 2px;
+	border-left: #0d2033 solid 2px;
+	border-right: #246fb9 solid 2px;
+	border-bottom: #246fb9 solid 2px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+.container:hover{
+	background-color: #89c2fa;
+	border-top: #046d5f solid 4px;
+	border-left: #046d5f solid 4px;
+	border-right: #021d19 solid 4px;
+	border-bottom: #021d19  solid 4px;
+	transition: 0.3s;
+
+}
+
+
+.item1{
+
+	grid-area: item1;
+
+}
+
+.item2{
+
+	grid-area: item2;
+	
+}
+
+.item3{
+	grid-area: item3;
+}
+
+.item4{
+	grid-area: item4;
+}
+
+.item5{
+	grid-area: item5;
+}
+
+.item6{
+	grid-area: item6;
+}
+
+.texto-item{
+	text-align: center;
+}
+
+.sidebar{
+	grid-area: sidebar;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+
+.mediosPago{
+	grid-area: mediosPago;
+}
+
+.contenedorMedioPago{
+	display: flex;
+	justify-content: center;
+	
+}
+
+.grid{
+
+	grid-template: 
+	'item1 item2 item3 sidebar' auto
+	'item4 item5 item6 sidebar' auto
+	'mediosPago mediosPago mediosPago sidebar' auto /
+	auto auto auto auto;
+}
+
+
+
+/****************    Articulo   ****************/
+
+.contenedorPrincipal{
+	margin-top: 80px;
+}
+
+
+.articulo{
+
+	color: #000000;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #000000;
+
+}
+
+.articuloTitulo{
+
+	text-align: left;
+	padding: 10px;
+	margin-bottom: 5px;	
+	background-color: #0a1a2a;
+
+}
+
+
+/****************    Articulo1   ****************/
+
+.articulo1{
+
+	color: #000000;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #000000;
+
+}
+
+.articuloTitulo1{
+
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 5px;	
+	background-color: #0a1a2a;
+}
+
+/******************************    Nosotros    ***************************/
+
+.boxNosotros1{
+	grid-area: boxNosotros1;
+
+
+}
+
+.boxNosotros2{
+	grid-area: boxNosotros2;
+}
+
+.boxNosotros3{
+	grid-area: boxNosotros3;
+}
+
+
+.contenedorNosotros{
+	padding-top: 8em;
+	padding-bottom: 2em;
+	padding-left: 6em;
+	width: 90%;
+	display: grid;
+	gap:  1em;
+	grid-template: 
+	'boxNosotros1 boxNosotros2 boxNosotros3' auto / auto auto auto;
+}
+
+
+
+/******************************    Servicios    ***************************/
+
+
+
+.peluqueria{
+	grid-area: peluqueria;
+
+}
+
+
+.odontologia{
+	grid-area: odontologia;
+
+}
+
+.oncologia{
+	grid-area: oncologia;
+
+}
+
+.video{
+	grid-area: video;
+}
+
+.contenedorServicios{
+	padding-top: 8em;
+	display: grid;
+	gap: 10px;
+	
+	grid-template:
+
+	'peluqueria odontologia oncologia' auto
+	'.      video       .' auto/
+	auto auto auto;
+
+}
+
+/******************************    productos    ***************************/
+
+.contenedorProductos{
+	padding-top: 8em;
+	padding-bottom: 4em;
+	display: grid;
+	gap: 20px;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: repeat(3, 1fr);
+	
+}
+
+.boxProductos > h1{
+	font-family: 'Fuzzy Bubbles', cursive;
+
+}
+
+.boxProductos{
+	
+	grid-column: 2;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	
+}
+
+.boxProductos > h1, p{
+	grid-column: 1;
+}
+
+.boxProductos > img{
+	grid-column: 2;
+}
+
+.boxProductos:hover{
+	transform: scale(120%);
+}
+
+/******************************    contacto    ***************************/
+/************    titulo formulario    ************/
+
+
+.seccionFormulario{
+	z-index: -1;
+}
+
+.formularioContacto{
+    height: 200px;
+    padding-top:0.5rem;    
+}
+
+.tituloFormulario{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+
+/**************     formulario    ***************/
+
+.seccionFormulario{
+    height: 100%;
+    width: 100%;
+    padding: 1rem 2rem;
+    /*background: rgb(14, 120, 241); */ 
+
+}
+
+.formulario{
+	border: #246fb9 solid 2px;
+    display: grid;
+    grid-template-columns: 35rem;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 6rem;
+}
+
+.h3-formulario{
+    font-weight: 600;
+    color: rgb(4, 6, 146);
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: left;
+    margin-top: 1.2rem;
+    text-decoration: underline;
+}
+
+.formulario-label{
+    display: block;
+    font-weight: 700;
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+
+.formulario-grupo-input{
+    position: relative;
+}
+
+.formulario-input{
+    width: 100%;
+    background-color: rgb(141, 234, 247);
+    border: 3px solid transparent; 
+    border-radius: 5px;
+    height: 20%;
+    line-height: 45px;
+    padding: 0.5rem 0.5rem;
+	z-index: -1;
+}
+
+.formulario-input:focus{
+    border: 3px solid rgb(59, 143, 221);
+    outline: none;
+    box-shadow: 3px 0 30px rgb(196, 182, 228);
+	z-index: -1;
+}
+
+.formulario-input-error{
+    font-size: 14px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formulario-input-error-activo{
+    display: block;
+}
+
+.formulario-validacion-estado{
+    position: absolute;
+    left: 33rem;
+    top: 0.5rem;
+    z-index: 100%;
+    font-size: 1.1rem;
+    opacity: 0
+}
+
+.formulario-mensaje{
+    height: 1.2rem;
+    line-height: 1.2rem;
+    background: rgb(45, 151, 221);
+    border-radius: 5px;
+    display:none;
+}
+
+.formulario-mensaje p{
+    text-align: center;
+}
+
+.formulario-mensaje-activo{
+    display: block;
+}
+
+.formulario-grupo-boton-enviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario-boton{
+    height: 1.5rem;
+    line-height: 1rem;
+    width: 30%;
+    background: rgb(10, 86, 228);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario-boton:hover{
+    box-shadow: 3px 0px 30px rgb(40, 58, 221);
+}
+
+.formulario-mensaje-ok{
+    font-size: 16px;
+    color: #08ab16;
+    margin-top: 0.5rem;
+    display: none;
+}
+
+.formulario-mensaje-ok-activo{
+    display: block;
+}
+
+/********** api maps **********/
+#datosPetsHall {
+	margin-top: 3rem;
+	width: 100%;
+	text-align: center;
+}
+
+/********** api maps **********/
+#map {
+	margin-top: 1rem;
+	height: 500px;
+	width: 100%;
+}
+
+
+
+/*---------------------    Estilos para validación    ----------------------*/
+
+.formulario-grupo-correcto .formulario-validacion-estado{
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.formulario-grupo-incorrecto .formulario-label{
+    color: #bb2929;
+}
+
+.formulario-grupo-incorrecto .formulario-validacion-estado{
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formulario-grupo-incorrecto .formulario-input{
+    border: 3px solid #bb2929;
+}
+
+
+
+/******************** este es el footer - pie de pagina *********************/
+
+.footer{
+	width: 100%;
+	background-color: #0a141d;
+	font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.footer .grupo1{
+	width: 100%;
+	max-width: 1200PX;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 50px;
+	padding: 45px 0;
+
+}
+
+.footer .grupo1 .box figure{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer .grupo1 .box figure img{
+	width: 250px;
+	border-radius: 10px;
+
+}
+
+.footer .grupo1 .box h2{
+	color: #fff;
+	margin-bottom:  25px;
+	font-size: 20px;
+}
+
+.footer .grupo1 .box p{
+	color: #efefef;
+	margin-bottom: 10px;
+	font-size: 1rem;
+}
+
+.red-social a{
+
+	display: inline-block;
+	text-decoration: none;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	color: #fff;
+	margin-top: 10px;
+	background-color: #0d2033;
+	text-align: center;
+	transition: all 300ms ease;
+
+}
+
+.red-social a:hover{
+	color: rgb(160, 160, 160);
+}
+
+.listaFooter {
+	display: flex;
+	flex-direction: column;
+	margin-right: 40px;
+	list-style: none;
+	
+}
+
+.itemFooter{
+	color: black;
+	font-size: 1rem;
+	margin: 0 10px;
+	line-height: 50px;
+	text-transform: uppercase;
+	width: max-content;
+
+}
+
+
+.itemLinkFooter{
+	text-decoration: none;
+	font-size: 1rem;
+	color: #fff;
+	padding: 10px;
+	width: 150px;
+	border-radius: 3px;
+	
+}
+
+.itemLinkFooter:hover{
+	background-color: rgb(160, 160, 160);
+	transition: 0.5s;
+}
+
+.footer .grupo2{
+	background-color: #0a1a2a;
+	padding: 15px 10px;
+	text-align:  center;
+	color: #fff;
+}
+
+.footer .grupo2 small{
+	font-size: 1rem;
+}
+
+a:link.aLinkFooter {
+	color: #fff;
+}
+a:visited.aLinkFooter {
+	color: #fff;
+}
+a:hover.aLinkFooter {
+	color: rgb(160, 160, 160);
+}
+a:active.aLinkFooter {
+	color: #fff;
+}
+
+
+
+/************************************** estos son los breakpoints **************************************/
+
+
+
+@media (max-width: 992px){
+
+	.listaInicio {
+		
+		flex-direction: column;
+		align-items: center;
+		margin:0;
+		background-color:#666666;
+		position: fixed;/* la posicion depende de la ventana*/
+		left: 0;
+		top: 60px;
+		width: 100%;
+		padding: 20px 0;
+
+		height: calc(100% - 60px);
+		overflow-y: auto;
+		
+		left: 100%;
+		transition: left 0.3s;
+	}
+	
+	.itemInicio{
+		
+		line-height: 70px;
+			
+	}
+		
+	.itemLink:hover{
+		background: none;
+		color: rgb(118, 0, 253);
+		
+	}
+
+	.nav-toggle{
+		display: block;
+	}
+
+	.listaInicio_visible{
+		left: 0;
+	}
+
+	.nav-toggle:focus:not(focus-visible){
+		outline: none;
+	}
+
+	.footer .grupo1{
+		width: 90%;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 30px;
+		padding: 35px 0;
+	
+	}
+
+
+	.contenedorNosotros{
+		padding-top: 8em;
+		padding-bottom: 2em;
+		padding-left: 6em;
+		width: 90%;
+		display: grid;
+		gap:  1em;
+		grid-template: 
+		'boxNosotros1 boxNosotros2' auto
+		'boxNosotros3 boxNosotros3' auto / auto auto;
+	}
+
+
+
+	.contenedorServicios{
+		padding-top: 8em;
+		display: grid;
+		gap: 10px;
+		
+		grid-template:
+	
+		'peluqueria odontologia' auto 
+		'oncologia  video' auto /
+		auto auto ;
+	
+	}
+	
+	
+}
+
+
+
+@media screen and (max-width:900px){
+
+	.footer .grupo1{
+		width: 90%;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 30px;
+		padding: 35px 0;
+	
+	}
+
+	.listaFooter {
+
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-right: 30px;
+		
+	}
+
+	.grid{
+
+		grid-template: 
+		'item1 item2 item3' auto
+		'item4 item5 item6' auto
+		'sidebar sidebar sidebar' auto
+		'mediosPago mediosPago mediosPago' auto /
+		auto auto ;
+	}
+
+}
+
+
+@media (max-width: 768px){
+
+	header{
+		height: 60px;
+	}
+
+	.logo{
+		
+		object-fit: scale-down;
+		height: 60px;
+	}
+
+	.primera-parte{
+
+		padding-top: 40px;
+		
+	}
+	
+
+	.footer .grupo1{
+		width: 90%;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 30px;
+		padding: 35px 0;
+	
+	}
+
+
+	.contenedorNosotros{
+		padding-top: 8em;
+		padding-bottom: 2em;
+		padding-left: 6em;
+		width: 90%;
+		display: grid;
+		gap:  1em;
+		grid-template: 
+		'boxNostros1' auto 
+		'boxNostros2' auto 
+		'boxNostros3 ' auto /
+		auto ;
+	}
+
+
+	.contenedorServicios{
+		padding-top: 8em;
+		display: grid;
+		gap: 10px;
+		
+		grid-template:
+	
+		'peluqueria' auto 
+		'odontologia' auto 
+		'oncologia ' auto
+		'video' auto /
+		auto ;
+	
+	}
+
+
+	.grid{
+		
+		width: 70%;
+		height: 70%;	
+		grid-template: 
+
+		'item1 item2' auto
+		'item3 item4' auto
+		'item5 item6' auto
+		'sidebar sidebar'
+		'mediosPago mediosPago' auto /
+		auto auto ;
+	}
+
+
+
+
+
+}
+
+
+
+
+
+
+@media (min-width: 650px){
+
+
+	.grid{
+		width: 100%;
+		height: 100%;
+		display: grid;
+		gap: 10px;
+		grid-template: 
+		'item1'auto
+		'item2' auto
+		'item3' auto
+		'item4'auto
+		'item5'auto
+		'item6'auto
+		'sidebar' auto
+		'mediosPago' -60%;
+	}
+}
+
+
+
